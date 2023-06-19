@@ -1,10 +1,14 @@
 <template>
-  <h1>test</h1>
+  <AccordionItem />
 </template>
 
 <script>
-export default {
+import AccordionItem from './Accordion-setup/AccordionItem.vue'
 
+export default {
+  components: {
+    AccordionItem
+  }
 }
 </script>
 
