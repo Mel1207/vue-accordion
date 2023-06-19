@@ -1,0 +1,37 @@
+*, html 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.container 
+  max-width: 1084px
+  margin: 0 auto
+  padding: 0 15px
+
+.section-row 
+  display: flex
+  gap: 3rem
+
+  .left-col, .right-col 
+    width: 50%
+
+.left-col 
+  display: grid 
+  grid-gap: 35px
+  grid-template-columns: repeat(2, auto)
+  grid-template-areas: "left right" "bottom bottom"
+
+  div 
+    height: 200px
+    width: 100%
+    background-size: cover
+
+  .img1 
+    background: url('../assets/img1.png')
+
+  .img2 
+    background: url('../assets/img2.png')
+
+  .img3 
+    background: url('../assets/img3.png')
+    grid-area: bottom

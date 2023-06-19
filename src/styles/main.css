@@ -1,0 +1,43 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1084px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-row {
+  display: flex;
+  gap: 3rem;
+}
+.section-row .left-col, .section-row .right-col {
+  width: 50%;
+}
+
+.left-col {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: "left right" "bottom bottom";
+}
+.left-col div {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+.left-col .img1 {
+  background: url("../assets/img1.png");
+}
+.left-col .img2 {
+  background: url("../assets/img2.png");
+}
+.left-col .img3 {
+  background: url("../assets/img3.png");
+  grid-area: bottom;
+}
+
+/*# sourceMappingURL=main.css.map */
