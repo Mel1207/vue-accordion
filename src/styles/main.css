@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
 *, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .container {
   max-width: 1084px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15vh 15px;
 }
 
 .section-row {
@@ -20,24 +26,65 @@
 
 .left-col {
   display: grid;
-  grid-gap: 35px;
+  grid-gap: 30px;
   grid-template-columns: repeat(2, auto);
   grid-template-areas: "left right" "bottom bottom";
-}
-.left-col div {
-  height: 200px;
-  width: 100%;
-  background-size: cover;
+  grid-auto-rows: auto 180px;
 }
 .left-col .img1 {
   background: url("../assets/img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
 }
 .left-col .img2 {
   background: url("../assets/img2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
 }
 .left-col .img3 {
   background: url("../assets/img3.png");
   grid-area: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25spx;
+}
+
+.acc-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.acc-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  cursor: pointer;
+}
+.acc-title p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.acc-content {
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 23px;
+  padding-right: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

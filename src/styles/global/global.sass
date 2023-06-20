@@ -3,10 +3,13 @@
   padding: 0
   box-sizing: border-box
 
+body 
+  font-family: $font-primary
+
 .container 
   max-width: 1084px
   margin: 0 auto
-  padding: 0 15px
+  padding: 15vh 15px
 
 .section-row 
   display: flex
@@ -17,21 +20,59 @@
 
 .left-col 
   display: grid 
-  grid-gap: 35px
+  grid-gap: 30px
   grid-template-columns: repeat(2, auto)
   grid-template-areas: "left right" "bottom bottom"
-
-  div 
-    height: 200px
-    width: 100%
-    background-size: cover
-
+  grid-auto-rows: auto 180px
+  
   .img1 
     background: url('../assets/img1.png')
+    background-size: cover
+    background-repeat: no-repeat
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15)
 
   .img2 
     background: url('../assets/img2.png')
+    background-size: cover
+    background-repeat: no-repeat  
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15)
 
   .img3 
     background: url('../assets/img3.png')
     grid-area: bottom
+    background-size: cover
+    background-repeat: no-repeat  
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15)
+
+h1 
+  font-family: $font-secondary
+  font-size: $h1-set
+  margin-bottom: 25px
+
+
+.section-text
+  font-size: $p-set
+  line-height: $p-lh-set
+  margin-bottom: 25spx
+
+.acc-wrapper
+  width: 100%
+  border-bottom: 1px solid #000
+
+.acc-title 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 70px 
+  cursor: pointer
+
+  p 
+    font-size: $p-set
+    font-weight: $acc-font-weight
+    
+
+.acc-content 
+  padding-bottom: 15px
+  font-size: $acc-content-set
+  line-height: $acc-content-lh-set
+  padding-right: 30px
