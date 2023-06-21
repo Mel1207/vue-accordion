@@ -30,12 +30,14 @@ body {
   grid-template-columns: repeat(2, auto);
   grid-template-areas: "left right" "bottom bottom";
   grid-auto-rows: auto 180px;
+  align-content: center;
 }
 .left-col .img1 {
   background: url("../assets/img1.png");
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  height: 370px;
 }
 .left-col .img2 {
   background: url("../assets/img2.png");

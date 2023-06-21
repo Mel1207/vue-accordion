@@ -24,12 +24,14 @@ body
   grid-template-columns: repeat(2, auto)
   grid-template-areas: "left right" "bottom bottom"
   grid-auto-rows: auto 180px
+  align-content: center
   
   .img1 
     background: url('../assets/img1.png')
     background-size: cover
     background-repeat: no-repeat
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15)
+    height: 370px
 
   .img2 
     background: url('../assets/img2.png')
@@ -48,7 +50,6 @@ h1
   font-family: $font-secondary
   font-size: $h1-set
   margin-bottom: 25px
-
 
 .section-text
   font-size: $p-set
@@ -70,7 +71,6 @@ h1
     font-size: $p-set
     font-weight: $acc-font-weight
     
-
 .acc-content 
   padding-bottom: 15px
   font-size: $acc-content-set
