@@ -5,6 +5,7 @@
 
 body 
   font-family: $font-primary
+  background: $bg-primary
 
 .container 
   max-width: 1084px
@@ -13,7 +14,7 @@ body
 
 .section-row 
   display: flex
-  gap: 3rem
+  gap: 3.75rem
 
   .left-col, .right-col 
     width: 50%
@@ -23,7 +24,7 @@ body
   grid-gap: 30px
   grid-template-columns: repeat(2, auto)
   grid-template-areas: "left right" "bottom bottom"
-  grid-auto-rows: auto 180px
+  grid-auto-rows: auto 240px
   align-content: center
   
   .img1 
@@ -31,7 +32,7 @@ body
     background-size: cover
     background-repeat: no-repeat
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15)
-    height: 370px
+    height: 380px
 
   .img2 
     background: url('../assets/img2.png')
@@ -51,10 +52,17 @@ h1
   font-size: $h1-set
   margin-bottom: 25px
 
+.section-sub 
+  font-size: $p-set
+  line-height: $p-lh-set
+  margin-bottom: 8px
+  font-weight: 600
+  color: $color-secondary
+
 .section-text
   font-size: $p-set
   line-height: $p-lh-set
-  margin-bottom: 25spx
+  margin-bottom: 44px
 
 .acc-wrapper
   width: 100%
