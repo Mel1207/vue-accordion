@@ -8,6 +8,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #F9FCFF;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 
 .section-row {
   display: flex;
-  gap: 3rem;
+  gap: 3.75rem;
 }
 .section-row .left-col, .section-row .right-col {
   width: 50%;
@@ -29,13 +30,15 @@ body {
   grid-gap: 30px;
   grid-template-columns: repeat(2, auto);
   grid-template-areas: "left right" "bottom bottom";
-  grid-auto-rows: auto 180px;
+  grid-auto-rows: auto 240px;
+  align-content: center;
 }
 .left-col .img1 {
   background: url("../assets/img1.png");
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  height: 380px;
 }
 .left-col .img2 {
   background: url("../assets/img2.png");
@@ -57,10 +60,18 @@ h1 {
   margin-bottom: 25px;
 }
 
+.section-sub {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #00000040;
+}
+
 .section-text {
   font-size: 16px;
   line-height: 25px;
-  margin-bottom: 25spx;
+  margin-bottom: 44px;
 }
 
 .acc-wrapper {
@@ -77,13 +88,13 @@ h1 {
 }
 .acc-title p {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .acc-content {
   padding-bottom: 15px;
   font-size: 14px;
-  line-height: 23px;
+  line-height: 25px;
   padding-right: 30px;
 }
 
