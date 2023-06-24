@@ -1,11 +1,13 @@
 @media screen and (max-width: 920px)
+  .container 
+    padding: 10vh 15px
   .section-row 
     gap: 2rem
   
   .left-col 
     grid-template-columns: 1fr
     grid-template-rows: 1fr 1fr 1fr
-    grid-template-areas: "left right bottom"
+    grid-template-areas: "left" "right" "bottom"
 
     .img1 
       height: auto
@@ -21,3 +23,20 @@
       height: auto 
       grid-area: bottom !important
       width: 100%
+
+@media screen and (max-width: 768px) 
+  .container 
+    padding: 5vh 15px
+
+  .section-row 
+    display: flex
+    flex-direction: column-reverse
+
+    .left-col, .right-col 
+      width: 100% 
+    
+    .left-col
+      height: 600px
+
+    .right-col 
+      margin-bottom: 30px
