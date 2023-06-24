@@ -38,6 +38,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  grid-area: left;
   height: 380px;
 }
 .left-col .img2 {
@@ -45,6 +46,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  grid-area: right;
 }
 .left-col .img3 {
   background: url("../assets/img3.png");
@@ -96,6 +98,33 @@ h1 {
   font-size: 14px;
   line-height: 25px;
   padding-right: 30px;
+}
+
+@media screen and (max-width: 920px) {
+  .section-row {
+    gap: 2rem;
+  }
+
+  .left-col {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "left right bottom";
+  }
+  .left-col .img1 {
+    height: auto;
+    grid-area: left !important;
+    width: 100%;
+  }
+  .left-col .img2 {
+    height: auto;
+    grid-area: right !important;
+    width: 100%;
+  }
+  .left-col .img3 {
+    height: auto;
+    grid-area: bottom !important;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
